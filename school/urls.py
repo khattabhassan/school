@@ -25,4 +25,4 @@ urlpatterns = [
     path ('', views.index),
     path ('school-signup', views.showformschool),
     path('admin/', admin.site.urls),
-]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
