@@ -30,4 +30,4 @@ def showformstudent(request):
     formstudent = StudentForm(request.POST or None)
     if formstudent.is_valid(): 
         formstudent.save() 
-    render(request, )
+    
