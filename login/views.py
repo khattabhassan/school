@@ -6,8 +6,7 @@ from .forms import StudentForm
 def index(request): 
     return render (request, 'index.html')
 
-def schooladmin(request): 
-    return render (request, 'school-admin.html')
+
 
 def datastatement(request): 
     return render (request, 'data-statement.html')
