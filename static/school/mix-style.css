@@ -1,0 +1,880 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' ,sans-serif;
+}
+.container .bg{
+    background-image:radial-gradient(rgba(0, 0, 0, 0.5),#00000026), url(images/image1.png);
+    width: 100%;
+    height: 1050px;
+    background-size: cover;
+    background-position: center;
+    }
+
+    .navbar{
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        left: 1400px;
+        font-size: 20px;
+        color:#7c98b8 ;
+        }
+        
+    nav{
+    flex: 1;
+    text-align: right;   
+    }
+
+    nav ul{
+    display: inline-block;
+    list-style-type: none;   
+    }
+    nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+    }
+
+a{
+    text-decoration: none;
+    color: #555;
+}
+
+p{
+    color: #555; /*color of text name*/
+}
+
+ .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+
+ /*-- footer-clo-4 --*/
+.col-4{
+                flex-basis: 25%; 
+                padding: 10px;
+                min-width: 200px;
+                margin-bottom: 50px;
+                transition: transform 0.5s;
+                bottom: 100px;
+}
+.col-4 img{
+width: 100%;
+}
+
+.title{
+    text-align: center;
+    margin: o auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+}
+
+.title:after{
+    content: '';
+    background: #3a8deb;
+    width: 140px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+h4{
+    color: rgb(82, 79, 79);
+    font-weight: normal;
+}
+
+.col-4 p{
+    font-size: 14px;
+}
+
+.rating{
+    color: #ff523b;
+}
+
+.col-4:hover{
+    transform: translateY(-5px);
+}
+
+#Quantity{
+    color: #ff523b;
+    position: absolute;
+    margin: 0;
+    padding-bottom: 5px;
+    padding-top: 7px;
+    font-size: 14px; 
+}
+
+.Rp:after{
+    content: '';
+    background: #3a8deb;
+    width: 255px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left:288px;
+    transform: translateX(-50%);
+    margin-bottom: -346px;
+}
+
+.more{
+    border-width: 1.5px;
+    border-style: solid;
+    border-color: #000000;
+    border-radius: 30px;
+    background: #000;
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    padding: 8px 25px;
+    margin: 30px 0;
+    transition: background 0.001s;
+}
+
+.more:hover{
+    background:#3a8deb;
+    border-color: #3a8deb;
+}
+
+/*-------------footer-------------*/
+.footer{
+    background: #000;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 60px 0 20px;
+    display: flex;
+    top: 420px;
+}
+.footer p{
+    color: #8a8a8a;
+}
+.footer h3{
+    color: #fff;
+    margin-bottom: 20px;
+}
+.footer-col-1 .footer-col-2 .footer-col-4{
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+.footer-col-1{
+    flex-basis: 30px;
+}
+.footer-col-2{
+    flex: 1;
+    /* text-align: center; */
+}
+.footer-col-2 img{
+    width: 180px;
+    margin-bottom: 20px;
+}
+
+.footer-col-4{
+    flex-basis: 12%;
+    text-align: center;
+}
+ul{
+    list-style-type: none;
+}
+.app-logo{
+    margin: 20px;
+}
+.app-logo img{
+    width: 140px;
+
+}
+.footer hr{
+    border: none;
+    background: #b5b5b5;
+    height: 1px;
+    margin: 20px;
+}
+.Copyright{
+    text-align: center;
+}
+.menu-icon{
+    width: 28px;
+    margin-left: 20px;
+    display: none; 
+}
+
+/*--------------- media query formenu ------------------*/
+@media only screen and (max-width: 800px){
+nav ul{
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background: rgba(94, 91, 91, 0.438);
+    width: 120px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+    margin-left: 260px;   
+    
+}
+nav ul li{
+    display: block;
+    margin-right: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+nav ul li a{
+    color: #fff;
+    }   
+.menu-icon{
+    display: block;
+    cursor: pointer;
+    }
+}
+
+/*-------------- Data-page | Statment form ----------------*/
+.form-box{
+    margin-top: 250px;
+    width: 520px;
+    height: 800px;
+    background: rgba(0, 0, 0, 0.5);
+    Color: #fff;
+    top: 70%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 90px 30px;
+    right: 0;
+    min-width: 300px;
+    border: solid 2px #2196F3;
+    margin-right: -15%;
+}
+
+                 /* Mark input boxes that gets an error on validation: */
+  input.invalid {
+    background: #17ca20;
+  }
+  
+  /* Hide all steps by default: */
+  .tab {
+    display: none;
+  }
+  
+  button {
+    background:linear-gradient(to top,#04AA6D, #58be99) ;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 17px;
+    font-family: Raleway;
+    cursor: pointer;
+    opacity: 0.8;
+  }
+  
+  button:hover {
+    opacity: 1;
+  }
+  
+  #prevBtn {
+    background-color: #bbbbbb;
+  }
+  
+  /* Make circles that indicate the steps of the form: */
+  .step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;  
+    border-radius: 50%;
+    display: inline-block;
+    top: -20px;
+    opacity: 0.5;
+  }
+  
+  
+  .step.active {
+    opacity: 1;
+  }
+  
+  /* Mark the steps that are finished and valid: */
+  .step.finish {
+    background-color: #04AA6D;
+  }
+
+h2{
+    margin: 0;
+    padding: 0 20px ;
+    text-align: center;
+    font-size: 22px;
+    position: absolute;
+    top: 60px;
+    left: 110px;
+}
+
+.form-box p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    color: rgb(190, 189, 189);
+}
+
+.form-box input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.form-box input[type="text"], input[type="tel"]
+{
+    border: none;
+    border-bottom: 1px solid #fff; 
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color:#fff;
+    font-size: 14px;
+}
+
+.form-box a
+{
+    text-decoration: none;
+    font-size: 14px;
+    color: #fff;
+}
+
+.form-box a:hover
+{
+    color: #27e7d7;
+}
+
+/*-------------footer-------------*/
+.footer{
+    position: absolute;
+    top: 1200px;
+    background: #000;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 50px;
+    width: 100%;
+}
+
+.footer p{
+    color: #8a8a8a;
+}
+.footer h3{
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.footer-col-1 .footer-col-2 .footer-col-4{
+min-width: 250px;
+margin-bottom: 20px;
+}
+.footer-col-1{
+    flex-basis: 30px;
+}
+.footer-col-2{
+    flex: 1;
+    text-align: center;
+}
+.footer-col-2 img{
+    width: 180px;
+    margin-bottom: 20px;
+}
+ .footer-col-4{
+    flex-basis: 12%;
+    text-align: center;
+}
+ul{
+    list-style-type: none;
+}
+.app-logo{
+    margin: 20px;
+    justify-content: center;
+}
+.app-logo img{
+    width: 140px;
+}
+.footer hr{
+    border: none;
+    background: #b5b5b5;
+    height: 1px;
+    margin: 20px;
+    width: 1250px;
+}
+
+.Copyright{
+    text-align: center;
+}
+.menu-icon{
+    width: 28px;
+    margin-left: 20px;
+    display: none;  
+}
+
+/*--------------- media query formenu ------------------*/
+@media only screen and (max-width: 800px){
+nav ul{
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background: rgba(94, 91, 91, 0.438);
+    width: 120px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+    margin-left: 260px;   
+}
+
+nav ul li{
+    display: block;
+    margin-right: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;  
+}
+
+nav ul li a{
+    color: #fff;
+    }   
+.menu-icon{
+    display: block;
+    cursor: pointer;
+    }
+}
+
+/*-----------------------media quer for less than 600 screen size-----------------------*/
+@media only screen and (max-width: 600px){
+    .row{
+        text-align:center;
+    }
+    .col-2, .col-3, .col-4{
+        flex-basis: 100%;
+    }
+    .cart-info p{
+        display: none;
+    }
+}
+
+                                        /*-- profile photo --*/            
+.wrapper{
+    height: 100px;
+    width: 100px;
+    position: relative;
+    border: 3px solid #3a8deb;
+    border-radius: 50%; 
+    background: url('icons/man.png');
+    background-size: 100% 100%;
+    overflow: hidden;
+    margin: 0 12px 0 0;
+}
+.wrapper:hover{
+    border: 3px solid #0fb633;
+}
+
+.my_file{
+    position: absolute;
+    bottom: -20px;
+    outline: none;
+    color: transparent;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px 40px;
+    cursor: pointer;
+    transition: 0.5s;
+    background: rgba(0,0,200,0.5);
+    opacity: 0;
+    right: 3px;
+}
+
+.my_file::-webkit-file-upload-button{
+    visibility: hidden;
+}
+.my_file::before{
+    content: '\f030';
+    font-family: fontAwesome;
+    font-size: 20px;
+    color: #fff;
+    display: inline-block;
+    --webkit-user-select: none;
+}
+
+.my_file::after{
+    content: 'Upload';
+    font-family: 'arial';
+    font-weight:bold;
+    color: #fff;
+    display: block;
+    top: 21px;
+    font-size:7px;
+    position: absolute;
+    left: 35px;
+    text-align: center;
+}
+
+.my_file:hover{
+    opacity: 1;
+    background: rgba(0, 200, 0, 0.5);
+}
+
+h2{
+    margin: 0;
+    padding: 0 20px ;
+    text-align: center;
+    font-size: 22px;
+    position: absolute;
+    top: 60px;
+    left: 110px;
+}
+
+.form-box-home input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.form-box-home [type="text"], input[type="number"], input[type="email"], input[type="date"]
+{
+    border: none;
+    border-bottom: 1px solid #fff; 
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color:#fff;
+    font-size: 16px;
+}
+
+.form-box input[type="submit"]
+{
+    border: 1px solid;
+    outline: none;
+    height: 40px;
+    width: 150px;
+    background:linear-gradient(to bottom, #1c8adb,#0d588d);
+    color: #fff;
+    font-size: 18px;
+    border-radius: 10px;
+    margin-top: 40px;
+    margin-left: 155px;
+}
+
+.form-box-home input[type="reset"]
+{
+    border: 1px solid;
+    outline: none;
+    height: 40px;
+    width: 150px;
+    background:linear-gradient(to bottom, #1c8adb,#0d588d);
+    color: #fff;
+    font-size: 18px;
+    
+    border-radius: 10px;
+}
+
+.form-box-home input[type="submit"]:hover
+{
+    cursor: pointer;
+    background:linear-gradient(to bottom, rgb(90, 243, 70), #0bb414);
+    color: #000;
+}
+
+#clear[type="reset"]:hover
+{
+    cursor: pointer;
+    background:linear-gradient(to bottom, rgb(250, 98, 98), #df2525);
+    
+}
+
+.form-box-home a
+{
+    text-decoration: none;
+    font-size: 14px;
+    color: #fff;
+}
+
+.form-box-home a:hover
+{
+    color: #27e7d7;
+}
+
+.my_file{
+    position: absolute;
+    bottom: -20px;
+    outline: none;
+    color: transparent;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 140px;
+    cursor: pointer;
+    transition: 0.5s;
+    background: rgba(0,0,200,0.5);
+    opacity: 0;
+    right:-80px; 
+}
+
+.my_file::-webkit-file-upload-button{
+    visibility: hidden;
+}
+.my_file::before{
+    content: '\f030';
+    font-family: fontAwesome;
+    font-size: 20px;
+    color: #fff;
+    display: inline-block;
+    --webkit-user-select: none; /*--i know that--*/
+    right: 50px;
+    text-align: center;
+}
+.my_file::after{
+    content: 'Upload';
+    font-family: 'arial';
+    font-weight:bold;
+    color: #fff;
+    display: block;
+    top: 30px;
+    font-size:10px;
+    position: absolute;
+    right: 10px;
+    text-align: center;
+}
+.my_file:hover{
+    opacity: 1;
+    
+    background: rgba(0, 200, 0, 0.5) ;
+}
+.p4{
+    width: 100%;
+    height: 120px;
+    position: relative;
+    padding: 10px;
+    text-align: center;
+    justify-items: center;
+    margin-bottom: 120px;
+
+}
+.g1{
+    position: absolute;
+    margin: 10px 0 0 20;
+    top: 0;
+    
+}
+.g2{
+    position: absolute;
+    margin: 10px 50px 0 110px;
+    top: 0;
+}
+.g3{
+    position: absolute;
+    margin: 10px 0 0 220px;
+    top: 0;
+   
+}
+.g4{
+    position: absolute;
+    margin: 10px 0 0 330px;
+    top: 0;
+  
+}
+
+/* The container */
+.container-radio{
+    display: inline-block;
+    position: relative;
+    padding-left: 35px;
+    margin:20px 40px 0 0;
+    cursor: pointer;
+    font-size: 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    }
+    
+    /* Hide the browser's default radio button */
+    .container-radio input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    }
+    
+    /* Create a custom radio button */
+    .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 19px;
+    width: 19px;
+    background-color: rgb(197, 197, 197);
+    border-radius: 50%;
+    }
+    
+    /* On mouse-over, add a grey background color */
+    .container-radio:hover input .checkmark {
+    background-color: #ccc;
+    }
+    
+    /* When the radio button is checked, add a blue background */
+    .container-radio input:checked ~ .checkmark {
+    background-color: #2196F3;
+    }
+    
+    /* Create the indicator (the dot/circle - hidden when not checked) */
+    .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+    }
+    
+/* Show the indicator (dot/circle) when checked */
+.container-radio input:checked ~ .checkmark:after {
+    display: block;
+    }
+    
+    /* Style the indicator (dot/circle) */
+.container-radio .checkmark:after {
+    top: 6px;
+    left: 6px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
+
+h4{
+    margin-top: 7px;
+    color: white;
+}
+textarea{
+    padding: 5px;
+    background: none;
+    border: solid white 2px;
+    width: 100%;
+    height: 120px;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+}
+#add{
+    margin-top: 20px;
+}
+
+.wrapper-4{
+    height: 100px;
+    width: 100px;
+    position: relative;
+    border: 2px solid #3a8deb;
+    /* border-radius: 50%;  */
+    background-image: url('icons/imgs.png');
+    background-size: 100% 100%;
+    /* margin: 100px auto; */
+    overflow: hidden;
+    margin: 0;
+    display: inline-block;
+}
+
+.wrapper-4:hover{
+    border: 2px solid #0fb633;
+}                              
+::-webkit-input-placeholder{
+    color: rgb(161, 161, 161);
+}
+
+details{
+    background: none;
+    border: 2px solid #fff;
+    left: 65%;
+    position: absolute;
+    width: 29%;
+    height: 40px;
+    width: 150px;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+    border: solid 2px #2196F3;        
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    text-align: center;
+    padding: 7px 0;
+}
+
+
+details ul{
+    background: none;
+    padding: 0;
+    border: solid 2px #2196F3;
+    border-top: none;
+    margin-top: 10px;
+}
+
+details ul li:hover{
+    background: rgb(141, 140, 140);
+    
+}
+
+
+        /* list-style */
+        .selector{
+            width: 350px;    
+        }
+        
+        .selectField{
+                width: 70%;
+                padding: 10px 20px;
+                /* margin-bottom: 5px; */
+                box-sizing: border-box;
+                background: none;
+                border: solid 2px #2196F3;
+                display:flex;
+                align-items: center;
+                justify-content: space-between;
+                cursor: pointer;
+        }
+        
+        .selectField img{
+                width: 20px;
+                transition: transform 0.5s; 
+        }
+        
+        #list{
+            width: 70%;
+            /* background: rgba(255, 255, 255, 0.5); */
+            border: solid 1px #2196F3;
+            background: none;
+            border-radius: 0 0 6px 6px;
+            overflow: hidden;
+            color: #000;
+            margin-bottom: 0;
+        }
+        .options{
+            width: 100%;
+            padding: 7px 0 7px 25px;
+            list-style: none;
+            cursor: pointer;
+            box-sizing: border-box;
+            position: relative;
+            justify-content: center;
+        }
+        
+        /* .options img{ 
+            width: 40px;
+            position: absolute;
+            top: 12px;
+            left: 25px;
+        
+        } */
+        .options:hover{
+            background: rgba(2, 72, 92, 0.7);
+        }
+        .hide{
+            visibility: hidden;
+            /* display: flex; */
+            
+        
+        }
+        
+        .rotate{
+            transform: rotate(180deg);
+        }

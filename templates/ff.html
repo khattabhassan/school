@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.5">
+            <title>Home</title>
+            <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;&display=swap"
+            rel="stylesheet">
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> <!-------profil-photo-link------->
+            <link rel="stylesheet" href="data-style-home.css">
+
+
+    </head>
+    <body>
+        <div class="header"></div>
+            <div class="container">
+                <div class="navbar">
+                    <div class="logo"> 
+                        <a href="index.html"> <img src="icons/logo.png" width="125px"></a>
+                    </div>
+                        <nav>
+                            <ul id="MenuItems">
+                                <li><a href="index.html">Home</a></li>  
+                                <li><a href="Performances.html">Performances</a></li>  
+                                <li><a href="About.html">About</a></li>  
+                                <li><a href="Contact.html">Contact</a></li>  
+                                <li><a href="account.html">Account</a></li>  
+                            </ul>
+                        </nav>
+                        <a href="#" ><img src="icons/cart.png" width="30px" height="30px" alt="Logo"> </a>
+                        <img src="icons/menu.png" class="menu-icon" onclick="menutoggle()">
+                </div>
+            </div>
+        </div>
+
+
+                                        <!------------------------ account-page ------------------------>
+
+                <div class="account-page">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-2">
+                                <img id="fam" src="images/image1.png" width="100%" >
+                            </div>
+                                
+                            <div class="bakground"> 
+                                <div class="form-box">
+
+
+                                    <form action="../php/regester.php" method="POST" enctype="multipart/form-data">
+                                      <!-- yes here -->   
+                                        <h2>Enter your House data</h2>
+
+                                        
+                            
+                                        <p>Address</p>
+                                        <input type="text" name="address" placeholder="Enter Your Address" required>
+                                        <p>price</p>
+                                        <input type="number" name="price" placeholder="Enter Your price" required>
+                                        <p>Details</p>
+                                        <textarea name="details" id="textarea" cols="63" rows="7" placeholder="Enter your house details..." title="Type something..." required></textarea>
+                                        
+                                        <h3>Type of the house</h3>
+                                        <label class="container-radio"> <p id="type"> Furnished</p>
+                                          <input type="radio" checked="checked" name="radio">
+                                          <span class="checkmark"></span>
+                                        </label>
+                                        <label class="container-radio"> <p id="type"> Unfurnished</p>
+                                          <input type="radio" name="radio">
+                                          <span class="checkmark"></span>
+                                        </label>
+
+                                        <!--add profile photo  -->
+                                        <div class="p4">  
+                                            <div class="wrapper g1"><input type="file" class="my_file img1" required> </div>
+                                            <div class="wrapper g2"><input type="file" class="my_file img2" required></div>  
+                                            <div class="wrapper g3"><input type="file" class="my_file img3" required></div>  
+                                            <div class="wrapper g4"><input type="file" class="my_file img4" required></div>  
+                                        </div> 
+
+
+                                         <input id="clear" type="reset" name="submit2" value="Clear"> 
+                                        <input type="submit" name="submit1" value="Submit">
+                                        
+                                    </form> 
+            
+                                    
+                                </div> <!--form-box close-->
+                            </div>
+                        </div><!--row close-->
+                    </div>
+                </div><!--account-page close-->
+
+                        <!------------footer------------>
+
+            <div class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="footer-col-1">
+                            <h3>Download Our App</h3>
+                            <p>Download App for Android and ios mobile phone.</p>
+
+                            <div class="app-logo">
+                                <img src="icons/play-store.png">
+                                <img src="icons/app-store.png">
+                            </div>
+                        </div>
+                        <div class="footer-col-2">
+                            <img src="icons/logo-white.png" alt="footer Logo">
+                            <p>
+                                Our Purpose is Provide Families to Find Home by Easier Ways
+                                and<br>Faster and Make Life More Safer and <br>Comfortable for all Families.
+                            </p>
+                        </div>
+                        <div class="footer-col-4">
+                            <h3>Follow us</h3>
+                            <ul>
+                                <li>YouTuobe</li>
+                                <li>Instagram</li>
+                                <li>Facebook</li>
+                                <li>Twitter</li>
+                            </ul>
+                        </div>                
+                    </div><!--row close-->
+                    <hr>
+                    <p class="Copyright">Copyright 2021- Mohamed_Ali</p>
+                </div>
+            </div><!--footerclose-->
+                                                    
+
+                    <!------- js for toggle menu ------->
+            <script>
+                var MenuItems = document.getElementById("MenuItems");
+                MenuItems.style.maxHeight = "0px";
+                function menutoggle(){
+                    if(MenuItems.style.maxHeight == "0px")
+                    {
+                        MenuItems.style.maxHeight = "200px";
+                    }
+                    else{
+                        MenuItems.style.maxHeight = "0px";
+                    }
+                }
+            </script>
+
+            <script>
+                var x = document.getElementById("login");
+                var y = document.getElementById("register");
+                var z = document.getElementById("btn");
+
+                function register(){
+                    x.style.left = "-400px";
+                    y.style.left = "50px";
+                    z.style.left = "110px";
+                }
+
+                function login(){
+                    x.style.left = "50px";
+                    y.style.left = "450px";
+                    z.style.left = "0";
+                }
+            </script>
+
+                        <!-----login form------>
+            <script>
+                var x = document.getElementById("login");
+                var y = document.getElementById("register");
+                var z = document.getElementById("btn");
+
+                function register(){
+                    x.style.left = "-400px";
+                    y.style.left = "50px";
+                    z.style.left = "100px";
+                }
+                function login(){
+                    x.style.left = "50px";
+                    y.style.left = "450px";
+                    z.style.left = "-10px";
+                }
+            </script>
+    </body>
+</html>
+
+

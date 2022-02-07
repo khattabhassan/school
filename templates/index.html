@@ -1,0 +1,378 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Madrasaty</title>
+        <link rel="stylesheet" type="text/css" href="{% static 'school/style.css' %}"/>
+        <link href="https://fonts.googleapis.com/css2?
+        family=Poppins:wght@300;400;500;600;700;&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-
+        awesome/4.7.0/css/font-awesome.min.css">
+
+        <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    </head>
+ <body>
+    <div class="header" id="head">
+    <div class="container">
+    <div class="navbar">
+    <div class="logo">
+            <a href="index.html"> <img src="icons/logo.png" width="125px" alt="logo"> </a>
+         </div>
+         <nav>
+            <ul class="white" id="MenuItems">
+                <li><a href="#">Home</a></li>  
+                <li><a href="Browse.html">Browse</a></li>  
+                <li><a href="admin-page.html">Admin</a></li>                   
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="About.html">About</a></li>
+                <li class="log"><a href="login.html">Login</a></li>
+                </ul>
+         </nav>
+                            <!------------------- Search-box ---------------------->
+
+
+            <!-- <div class="search-box">
+                         <div class="icon"> </div> 
+            <input class="search-txt" type="search" name="" placeholder="Type to search.. .">
+            <a class="search-btn" href="#"> 
+                <i class="fas fa-search"></i>
+            </a>
+            </div> -->
+
+            <div class="search">
+                <div class="icon"> </div> 
+                <div class="input">
+                <input id="mysearch" type="search" placeholder="Type Search.. .">
+            </div>
+            <span class="clear" onclick="document.getElementById(mysearch).value=''"></span>
+            </div>
+        
+       
+                            <!------------------------ bar-section ------------------------->
+
+    <!-- <a href="account.html"><img src="icons/log-out.png" id="MenuItems"
+                     width="60px" height="40px" title="log out" alt="log-out"></a> -->
+        <img src="icons/menu.png" class="menu-icon" onclick="menutoggle()" alt="menu">
+            </div> 
+            <div class="row">
+
+                <div class="col-2 white">
+                <h1>Find the best nearby <br>schools in no time!</h1>
+            <p>save time and effort by choosing<br> the right school within seconds. and register<br> for it now by using Madrasaty.
+                future is always waiting.
+            </p>   
+            <a href=" Browse.html" class="btn">Explore Now &#8594;</a>
+
+             </div>
+                <div class="col-2">
+                <!-- <img src="images/image1.png" alt="background"> -->
+                </div>
+            </div>
+        </div>
+    </div>
+   
+                                                                <!---------- featured categories ---------->
+    <div class="categories">
+        <div class="small-container">
+
+ <div class="row">
+            <div class="col-3">
+                <img src="images/out1.jpg" width="125px" alt="image-1"> 
+            </div>
+            <div class="col-3">
+                <img src="images/out2.jpg" width="125px" alt="image-2"> 
+            </div>
+            <div class="col-3">
+                 <img src="images/out3.jpg" width="125px" alt="image-3"> 
+            </div>
+        </div>
+    </div> 
+</div>
+
+                                                                        <!---------- Availabe Schools---------->
+    <h2 class="title">Availabe Schools</h2>
+
+    <div class="row">
+        <div class="col-4">
+            <a href="Gallery.html">    <img src="images/h1.jpg" alt="Gallery"></a>
+            <h3>Camboni High School</h3>
+            <h4>International School</h4>
+            <h4>Khartoum:</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half"></i>
+            </div>
+            <p id="cash"> $180.000</p>
+        </div>
+        <div class="col-4">
+            <a href="Gallery.html">    <img src="images/h2.jpg" alt="Gallery"></a>
+            <h3>Future Primary School</h3>
+            <h4>Private School:</h4>
+            <h4>Bahri:</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half"></i>
+            </div>
+            <p id="cash">$100.000</p>
+        </div>
+        <div class="col-4">
+            <a href="Gallery.html">   <img src="images/h3.jpg" alt="Gallery"></a>
+            <h3>Al.Malik Fahad high School</h3>
+            <h4>Private School:</h4>
+            <h4>Omdurman</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+            </div>
+            <p id="cash">$125.000</p>
+        </div>
+        <div class="col-4">
+            <a href="Gallery.html">   <img src="images/h4.jpg" alt="Gallery"></a>
+            <h3>Qabas Primary School</h3>
+            <h4>Private Schhol</h4>
+            <h4>Khartoum</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half"></i>
+                        <i class="fa fa-star-half-o"></i>
+            </div>
+            <p id="cash">$150.000</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-4">
+            <a href="Gallery.html">  <img src="images/h5.jpg" alt="Gallery"></a> 
+            <h3>Comboni High School</h3>
+            <h4>International School</h4>
+            <h4>Khartoum</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                        <i class="fa fa-star-half-o"></i>
+            </div>
+            <p id="cash">$120.000</p>
+        </div>
+        <div class="col-4">
+            <a href="Gallery.html">   <img src="images/h6.jpg" alt="Gallery"> </a>
+            <h3>The American High School</h3>
+            <h4>International School</h4>
+            <h4>khartoum</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                        <i class="fa fa-star-half-o"></i>
+            </div>
+            <p id="cash">$500.000</p>
+        </div>
+        <div class="col-4">
+            <a href="Gallery.html">   <img src="images/h7.jpg" alt="Gallery"> </a>
+            <h3>Unity Primary School</h3>
+            <h4>Private School:</h4>
+            <h4>Bahri</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                        <i class="fa fa-star-half-o"></i>
+            </div>
+            <p id="cash">$600.000</p>
+        </div>
+        <div class="col-4">
+            <a href="Gallery.html">   <img src="images/h8.jpg" alt="Gallery"> </a>
+            <h3>KAS P&H school </h3>
+            <h4>Private School</h4>
+            <h4>Khartoum</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                        <i class="fa fa-star-half-o"></i>
+            </div>
+            <p id="cash">$400.000</p>
+        </div>
+    </div>
+</div>
+
+<!---------- offer ---------->
+
+    <div class="offer">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-2" >
+                    <div class="offer-img"></div>
+                </div>
+                <div class="col-2 Exclusive-design">
+                
+                    <h1>Register for school</h1>
+                    <small>Our mission is to keep the world smaller for you,
+                        to book your seat in the school that you want to study in,
+                        your journy is going to start from here, life is getting easier now!
+                        
+                        
+                    </small>
+                    <a href="sign-up.html"class="btn">sign up now</a>
+                </div>
+            </div>
+        </div>
+    </div>   
+
+                                                                        <!------------testimonial------------>
+  <div class="testimonial">
+      <div class="small-container">
+          <div class="row">
+            
+              <div class="col-3">
+                <i class="fa fa-quote-left"></i>  
+                <p>
+                      I like the idea of the website it is really brilliant.
+                      nice job Madrasaty you guys are the best.
+                  </p>
+                  
+                  <div class="rating">
+                             <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half"></i>
+                </div>
+                <img src="images/user-1.png" alt="user-1">
+              <h3>Rana Ahmed</h3>
+              </div>
+         
+          
+            
+            <div class="col-3">
+              <i class="fa fa-quote-left"></i>  
+              <p>
+                    I love the website very much its my first time to try it.
+                    in point of view Madrasty would be so great if you guys make a payment method on it.
+                </p>
+                
+                <div class="rating">
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star-o"></i>
+              </div>
+              <img src="images/user-2.png" alt="user-2">
+            <h3>Mohamed Salih</h3>
+            </div>
+            
+            
+                <div class="col-3">
+                  <i class="fa fa-quote-left"></i>  
+                  <p>
+                        I like this website it makes it easier to find the most qualified school for my kids i find it very usful 
+                        having Madrasty in my browser is a priority to me!.
+                    </p>
+                    
+                    <div class="rating">
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star-o"></i>
+                              <i class="fa fa-star-half-o"></i>
+                  </div>
+                  <img src="images/user-3.png" alt="user-3">
+                <h3>Fatima Ali</h3>
+             </div>
+      </div>
+  </div>
+                                                                          <!------------brands------------>
+<div class="brands">
+    <div class="small-container">
+        <div class="row">
+                    <div class="col-5"><img src="icons/logo-godrej.png" alt="Sponsor-1"></div>
+                    <div class="col-5"><img src="icons/logo-oppo.png" alt="Sponsor-2"></div>
+                    <div class="col-5"><img src="icons/logo-coca-cola.png" alt="Sponsor-3"></div>
+                    <div class="col-5"><img src="icons/logo-paypal.png" alt="Sponsor-4"></div>
+                    <div class="col-5"><img src="icons/logo-philips.png" alt="Sponsor-5"></div>
+                
+         </div>
+      </div>
+  </div>
+ </div>
+                                                                             <!------------footer------------>
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Download App for Android and ios mobile phone.</p>
+
+                    <div class="app-logo">
+                        <img src="icons/play-store.png" alt="play-stor">
+                        <img src="icons/app-store.png" alt="app-stor">
+                    </div>
+                     </div>
+                     <div class="footer-col-2">
+                        <a href="#head"><img src="icons/logo-white.png" alt="logo-footer"></a>
+                        <p>
+                            Our mission is to keep the world smaller for you,<br> to book your seat in the school that you want to study in,
+                            <br>your journy is going to start from here, life is getting easier now!
+                        </p>
+                             </div>
+
+                     <div class="footer-col-4">
+                        <h3>Follow us</h3>
+                        <ul>
+                            <li>YouTuobe</li>
+                            <li>Instagram</li>
+                            <li>Facebook</li>
+                            <li>Twitter</li>
+                        </ul>
+             </div>
+                             
+        </div>
+        <hr>
+        <p class="Copyright">Copyright 2021- Amjed & Ali</p>
+    </div>
+</div>
+                                            <!-------js for toggle menu------->
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px")
+        {
+            MenuItems.style.maxHeight = "200px";
+        }
+        else{
+            MenuItems.style.maxHeight = "0px";
+        }
+    }
+</script>
+
+<script>
+    const icon = document.querySelector('.icon');
+    const search = document.querySelector('.search');
+    icon.onclick = function(){
+        search.classList.toggle('active')
+    }
+    </script>
+
+</body>
+</html>
