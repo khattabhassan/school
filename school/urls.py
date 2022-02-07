@@ -23,6 +23,10 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path ('', views.index),
-    path ('school-signup', views.showformschool),
+    path ('about/', views.about),
+    path ('browse/', views.browse),
+    path ('data-statement/', views.statement),
+    
+    path ('school-signup/', views.showformschool),
     path('admin/', admin.site.urls),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
